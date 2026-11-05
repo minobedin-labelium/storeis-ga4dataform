@@ -1,12 +1,12 @@
-defaultAssertionDataset: superform_assertion
+defaultAssertionDataset: ga4_assertions_302271503
 defaultLocation: EU
-defaultProject: dataform-package
+defaultProject: santoni-gtm-server-side
 vars:
-  GA4_DATASET: analytics_31337
-  LOCAL_TIMEZONE: Europe/Paris
-  QUALITY_DATASET: superform_quality_31337
-  TRANSFORMATIONS_DATASET: superform_transformations_31337
-  OUTPUTS_DATASET: superform_outputs_31337
+  GA4_DATASET: analytics_302271503
+  LOCAL_TIMEZONE: Europe/Rome
+  QUALITY_DATASET: ga4_quality_302271503
+  TRANSFORMATIONS_DATASET: ga4_transformations_302271503
+  OUTPUTS_DATASET: ga4_outputs_302271503
   LABEL_GENERIC_BRAND: superformlabs # constant
   LABEL_GENERIC_TOOL: ga4dataform # constant for now...
   LABEL_GENERIC_LICENSE_TYPE: core # core or premium

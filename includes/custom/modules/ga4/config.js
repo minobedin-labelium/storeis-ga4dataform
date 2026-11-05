@@ -44,7 +44,7 @@ const config = {
   // on a new or full build, this start date will be picked
   ENABLED: true,
   VERSION: 1,
-  GA4_START_DATE: "2020-01-01",
+  GA4_START_DATE: "2026-01-01",
 
   // custom definitions
   // a very complete list of all recommended and standard event parameters is
@@ -71,14 +71,37 @@ const config = {
   //    { name: "event_value", type: "decimal" },
   //    { name: "event_value", type: "string", renameTo: "event_value_string" }
   // ],
-  CUSTOM_EVENT_PARAMS_ARRAY: [],
+  CUSTOM_EVENT_PARAMS_ARRAY: [
+    { name: "page_type", type: "string" },
+    { name: "page_language", type: "string" },
+    { name: "page_country", type: "string" },
+    { name: "user_status", type: "string" },
+    { name: "firstLevelCategory", type: "string" },
+    { name: "secondLevelCategory", type: "string" },
+    { name: "thirdLevelCategory", type: "string" },
+    { name: "PLP_fullCategoryName", type: "string" },
+    { name: "master_sku", type: "string" },
+    { name: "product_gender", type: "string" },
+    { name: "product_availability", type: "string" },
+    { name: "checkout_type", type: "string" },
+    { name: "failed_payment", type: "string" },
+    { name: "exp_experiment_string", type: "string" },
+    { name: "exp_variant_string", type: "string" },
+    { name: "action", type: "string" },
+    { name: "menu_first_level", type: "string" },
+    { name: "menu_second_level", type: "string" },
+  ],
 
   // user properties
   // example:
   // CUSTOM_USER_PROPERTIES_ARRAY: [
   //    { name: "lifetime_value",   type: "decimal" }
   // ],
-  CUSTOM_USER_PROPERTIES_ARRAY: [],
+  CUSTOM_USER_PROPERTIES_ARRAY: [
+    { name: "custom_user_status", type: "string" },
+    { name: "user_ecomm_country", type: "string" },
+    { name: "custom_ltv", type: "decimal" },
+  ],
 
   // item custom dimensions and metrics
   // these will appear in `items.item_params_custom.*`
@@ -86,7 +109,14 @@ const config = {
   // CUSTOM_ITEM_PARAMS_ARRAY: [
   //    { name: "stock_status", type: "string" }
   // ]
-  CUSTOM_ITEM_PARAMS_ARRAY: [],
+  CUSTOM_ITEM_PARAMS_ARRAY: [
+    { name: "item_sku", type: "string" },
+    { name: "gender", type: "string" },
+    { name: "availability", type: "string" },
+    { name: "promotion", type: "string" },
+    { name: "stock_quantity", type: "decimal" },
+    { name: "size", type: "string" },
+  ],
 
   // URL parameters to extract to own column
   // (note: all standard utm params are already extracted to `url_params`)
